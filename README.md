@@ -30,6 +30,17 @@ mvn spring-boot:build-image -DskipTests -DdockerPassword=
 - kubectl get pvc
 - kubctl get pv
 ```
+### Windows Shell Cmd
+```bash
+wsl --list --verbose --all (to see Docker is running)
+docker info
+docker images
+
+cd C:\Windows\System32\drivers\etc
+Add :
+# Custom entry for Keycloak
+127.0.0.1 keycloak.default.svc.cluster.local
+```
 ### When changed in frontend:
 ```bash
 - cd .\microservices-shop-frontend\
